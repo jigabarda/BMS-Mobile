@@ -1,5 +1,7 @@
 # Mobile App Broadcast Management System
+
 📱 Full-Stack Broadcast Mobile App
+
 ✨ Description
 
 Welcome to the Mobile App of the Full-Stack Broadcast System! This app keeps users instantly connected with real-time broadcasts from the web dashboard. Users can explore a curated list of broadcasts, view detailed messages, and receive push notifications. A convenient refresh button ensures the latest broadcasts appear immediately. Device registration and JWT authentication are handled securely, and navigation is smooth with Expo Router. API calls are optimized using a custom fetch wrapper. The app is designed for both Android and iOS, delivering a fast, responsive, and user-friendly experience.
@@ -59,4 +61,5 @@ Open on a real device (required for push notifications)
 # 👤 Author
 
 James Ivan Gabarda
-Full Stack Developer
+
+Full Stack Developer | Software Developer
