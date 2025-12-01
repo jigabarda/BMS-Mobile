@@ -1,50 +1,62 @@
-# Welcome to your Expo app 👋
+# Mobile App Broadcast Management System
+📱 Full-Stack Broadcast Mobile App
+✨ Description
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Welcome to the Mobile App of the Full-Stack Broadcast System! This app keeps users instantly connected with real-time broadcasts from the web dashboard. Users can explore a curated list of broadcasts, view detailed messages, and receive push notifications. A convenient refresh button ensures the latest broadcasts appear immediately. Device registration and JWT authentication are handled securely, and navigation is smooth with Expo Router. API calls are optimized using a custom fetch wrapper. The app is designed for both Android and iOS, delivering a fast, responsive, and user-friendly experience.
 
-## Get started
+# 🛠 Tech Stack & Tools Used
 
-1. Install dependencies
+⚛️ React Native – Cross-platform mobile framework
 
-   ```bash
-   npm install
-   ```
+🚀 Expo – Development and build tools
 
-2. Start the app
+🔔 Expo Notifications – Push notifications
 
-   ```bash
-   npx expo start
-   ```
+🔒 Expo SecureStore – Secure JWT storage
 
-In the output, you'll find options to open the app in a
+🧭 Expo Router – Navigation management
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+🏗 React Hooks – State & side-effect management
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+🌐 fetch API – HTTP requests
 
-## Get a fresh project
+🔑 JWT Authentication – Secure API access
 
-When you're ready, run:
+🔥 Firebase
 
-```bash
-npm run reset-project
-```
+🔔 Token management for push notifications
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+⚡ Instant notification delivery to registered devices
 
-## Learn more
+⚛️ React Native
 
-To learn more about developing your project with Expo, look at the following resources:
+📱 Fully cross-platform support (iOS & Android)
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+🧩 Component-based architecture for reusable UI
 
-## Join the community
+⚡ Optimized performance for mobile devices
 
-Join our community of developers creating universal apps.
+# ⚙️ Installation & Run
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Clone the repository:
+
+git clone <repo-url>
+cd bms-mobile
+
+
+Install dependencies:
+
+npm install
+
+
+Run the app:
+
+npx expo start
+
+
+Open on a real device (required for push notifications)
+
+# 👤 Author
+
+James Ivan Gabarda
+Full Stack Developer
