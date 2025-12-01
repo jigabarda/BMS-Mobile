@@ -1,4 +1,5 @@
 // app/hooks/useAuth.ts
+
 import * as SecureStore from "expo-secure-store";
 import { apiRequest } from "../lib/api";
 
@@ -8,20 +9,23 @@ export interface LoginResponse {
   message?: string;
 }
 
+// ✔ FIXED LOGIN PAYLOAD FORMAT
 export async function login(
   email: string,
   password: string
 ): Promise<LoginResponse> {
-  // Rails expects nested user param in your backend routes
   const payload = { user: { email, password } };
+
   const data = await apiRequest("/auth/sign_in", "POST", payload);
-  // store token
-  if (data && data.token) {
-    await SecureStore.setItemAsync("token", data.token);
+
+  if (data?.token) {
+    await SecureStore.setItemAsync("auth_token", data.token);
   }
+
   return data;
 }
 
+// signup route
 export async function signup(
   email: string,
   password: string,
@@ -36,13 +40,20 @@ export async function signup(
         : {}),
     },
   };
+
   return apiRequest("/auth", "POST", payload);
 }
 
-export async function getToken(): Promise<string | null> {
-  return SecureStore.getItemAsync("token");
+export async function logout() {
+  await SecureStore.deleteItemAsync("auth_token");
 }
 
-export async function logout(): Promise<void> {
-  await SecureStore.deleteItemAsync("token");
+// unified token header
+export async function getTokenHeaders() {
+  const token = await SecureStore.getItemAsync("auth_token");
+  return token ? { Authorization: `Bearer ${token}` } : undefined;
+}
+
+export async function getRawToken() {
+  return await SecureStore.getItemAsync("auth_token");
 }
