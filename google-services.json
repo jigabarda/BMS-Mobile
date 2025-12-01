@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "933208732598",
+    "project_id": "bms-development-e258c",
+    "storage_bucket": "bms-development-e258c.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:933208732598:android:511a9ee2194853f4cd8717",
+        "android_client_info": {
+          "package_name": "com.jagabarda.bmsmobile"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCofEsLBsCHFw6ZlT2pAQ_311T4Z3GEBvQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
